@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="busca.html">
+        <div>
+            <label for="input_user">Nome do Usuário:</label>
+            <input type="text" id="input_user" name="Nome">
+        </div>
+        <div>
+            <label for="input_dt_nascimento" name="data">Data de nascimento:</label>
+            <input type="date" id="input_dt_nascimento">
+        </div>
+        <div>
+            <label for="select_curso">Curso:</label>
+            <select name="curso" id="select_curso">
+                <optgroup label="Cursos Superiores">
+                    <option value="ads">Análise e Desenvolvimento de Sistemas</option>
+                    <option value="beca">Engenharia de controle e automação</option>
+                    <option value="civil">Engenharia civil</option>
+                    <option value="mat">Licenciatura em Matemática</option>
+                </optgroup>
+                <optgroup label="Cursos técnicos">
+                    <option value="intel">Técnico em Eletromecânica</option>
+                    <option value="inted">Técnico em Edificações</option>
+                    <option value="intin">Técnico em Informática</option>
+                </optgroup>
+            </select>
+        </div>
+        <div>
+            <label for="input_mensagem">Mensagem: </label>
+        </div>
+        <div>
+            <textarea name="Mensagem" id="input_mensagem"></textarea>
+        </div>
+        <div>
+            <label>Profissão: </label>
+            <input type="radio" name="profissao" value="professor">Professor
+            <input type="radio" name="profissao" value="aluno">Aluno
+            <input type="radio" name="profissao" value="servidor">Servidor
+        </div>
+        <div>
+            <label>Termos de uso: </label>
+            <input type="checkbox"> Aceito os termos de uso.
+        </div>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar/restaurar dados</button>
+        <button type="button" onclick="alert('Quer ajuda?')">Alerta</button>
+    </form>
+</body>
+</html>

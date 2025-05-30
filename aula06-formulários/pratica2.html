@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria Online</title>
+</head>
+<body>
+    <form action="#">
+        <div>
+            <label for="sabor">Escolha o sabor da Pizza: </label>
+            <select name="sabor" id="sabor">
+                <optgroup label="Tradicionais">
+                    <option value="frango">Frango</option>
+                    <option value="calabresa">Calabresa</option>
+                    <option value="marguerita">Marguerita</option>
+                </optgroup>
+                <optgroup label="Especiais">
+                    <option value="quatro_queijos">Quatro Queijos</option>
+                    <option value="portuguesa">Portuguesa</option>
+                    <option value="pepperoni">Pepperoni</option>
+                </optgroup>
+                <optgroup label="Doces">
+                    <option value="chocolate">Chocolate</option>
+                    <option value="banana">Banana</option>
+                    <option value="morango">Morango</option>
+                </optgroup>
+            </select>
+            <label for="quantidade">Quantidade</label>
+            <input type="number" name="quantidade" id="quantidade">
+        </div>
+        <div>
+            <label for="tamanho">Escolha o tamanho da Pizza</label>
+            <input type="radio" name="tamanho" id="tamanho_pequena" value="pequena">
+            <label for="tamanho_pequena">Pequena</label>
+            <input type="radio" name="tamanho" id="tamanho_media" value="media">
+            <label for="tamanho_media">Média</label>
+            <input type="radio" name="tamanho" id="tamanho_grande" value="grande">
+            <label for="tamanho_grande">Grande</label>
+        </div>
+        <div>
+            <label for="adicionais">Escolha quantos adicionais quiser</label>
+            <input type="checkbox" name="adicional" id="ad_tomate" value="tomate">
+            <label for="ad_tomate">Tomate</label>
+            <input type="checkbox" name="adicional" id="ad_cebola" value="cebola">
+            <label for="ad_cebola">Cebola</label>
+            <input type="checkbox" name="adicional" id="ad_pepperoni" value="pepperoni">
+            <label for="ad_pepperoni">Pepperoni</label>
+        </div>
+        <div>
+            <label for="bebiba">Escolha sua bebida</label>
+            <select name="bebiba" id="bebida">
+                <option value="cerveja">Cerveja</option>
+                <option value="refri">Refri</option>
+                <option value="suco">Suco</option>
+            </select>
+        </div>
+        <div>
+            <label for="endereço">Informe seu endereço de entrega:</label>
+        </div>
+        <div>
+            <textarea name="endereço" id="endereço"></textarea>
+        </div>
+        <div>
+            <button type="submit">Pedir a pizza</button>
+            <button type="reset">Errei tudo, quero refazer.</button>
+        </div>
+    </form>
+</body>
+</html>

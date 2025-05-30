@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+</head>
+<body>
+    <form action="#">
+        <div>
+            <label for="input_nome">Nome:</label>
+            <input type="text" id="input_nome" name="nome">
+        </div>
+        <div>
+            <label for="input_email">Email:</label>
+            <input type="email" id="input_email" name="email">
+        </div>
+        <div>
+            <label for="input_assunto">Assunto:</label>
+            <select name="assunto" id="input_assunto" name="assunto">
+                <optgroup label="Tirar dúvidas">
+                    <option value="aula">Aula particular</option>
+                    <option value="duvida">Dúvida pontual</option>
+                </optgroup>
+                <optgroup label="financeiro">
+                    <option value="orçamento">Solicitar orçamento</option>
+                    <option value="pagamento">Fazer pagamento</option>
+                </optgroup>
+            </select>
+        </div>
+        <div>
+            <label for="input_mensagem">Mensagem</label>
+        </div>
+        <div>    
+            <textarea name="Mensagem" id="input_mensagem" placeholder="Digite aqui a sua mensagem" name="mensagem"></textarea>
+        </div>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar/Restaurar dados</button>
+    </form>
+</body>
+</html>
